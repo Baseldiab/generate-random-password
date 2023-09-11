@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>According</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <main>
+      <header class="container my-5">
+        <h1
+          class="main-head p-2 mx-auto fs-3 text-uppercase px-5 py-3 rounded text-center"
+        >
+          generate random password
+        </h1>
+      </header>
+      <section class="mx-auto text-center my-5">
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="password mx-2">
+            <button
+              class="generate-btn btn btn-primary fw-bold fs-5 px-4 py-3 mx-2"
+            >
+              generate password
+            </button>
+            <input
+              class="password__input-vol"
+              type="range"
+              min="6"
+              max="20"
+              step="1"
+              value="6"
+            />
+            <span class="password__vol text-light fs-5 text-uppercase fw-bold"
+              >6</span
+            >
+          </div>
+        </div>
+        <div
+          class="password-random px-5 py-3 my-5 fw-bold mx-auto justify-content-center bg-light rounded"
+        >
+          -----
+        </div>
+      </section>
+    </main>
+
+    <!-- =================Start Footer==================== -->
+    <footer class="py-2 text-center text-capitalize bg-black text-secondary">
+      <p class="m-0 fs-6">
+        All Right Reserved © <span class="footer-year"> 2023</span>-Basel Diab
+      </p>
+    </footer>
+
+    <!-- ====================================================== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
