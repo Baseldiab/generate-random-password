@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>According</title>
+    <title>Generate Password</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
@@ -14,38 +14,83 @@
   </head>
   <body class="bg-dark">
     <main>
-      <header class="container my-5">
+      <header class="container my-1">
         <h1
-          class="main-head p-2 mx-auto fs-3 text-uppercase px-5 py-3 rounded text-center"
+          class="main-head p-2 mx-auto text-light text-uppercase px-5 py-3 rounded text-center"
         >
           generate random password
         </h1>
       </header>
-      <section class="mx-auto text-center my-5">
-        <div class="container d-flex justify-content-center align-items-center">
-          <div class="password mx-2">
-            <button
-              class="generate-btn btn btn-primary fw-bold fs-5 px-4 py-3 mx-2"
-            >
-              generate password
+      <section class="passwords mx-auto text-center rounded-3 my-5">
+        <div class="container py-2">
+          <div
+            class="passwords__generator py-3 my-3 fw-bold mx-auto row d-flex justify-content-between align-items-center bg-light rounded rounded-5"
+          >
+            <span class="password-random px-5 fs-5 col-md-7 col-12">-------</span>
+            <button class="btn-copy btn col-md-5 col-12 text-end">
+              <i class="fa-regular fa-copy fs-4"></i>
             </button>
-            <input
-              class="password__input-vol"
-              type="range"
-              min="6"
-              max="20"
-              step="1"
-              value="6"
-            />
-            <span class="password__vol text-light fs-5 text-uppercase fw-bold"
-              >6</span
-            >
           </div>
-        </div>
-        <div
-          class="password-random px-5 py-3 my-5 fw-bold mx-auto justify-content-center bg-light rounded"
-        >
-          -----
+          <form class="form-checkbox" action="" ">
+            <input
+              type="checkbox"
+              id="uppercase"
+              name="uppercase"
+              value="uppercase"
+            />
+            <label
+              for="uppercase"
+              class="checkBox-label text-capitalize fs-5 my-1"
+            >
+              uppercase</label
+            ><br />
+            <input type="checkbox" id="lowercase" name="lowercase" value="lowercase" />
+            <label
+              for="lowercase"
+              class="checkBox-label text-capitalize fs-5 my-1"
+            >
+              lowercase</label
+            ><br />
+            <input type="checkbox" id="number" name="number" value="number" />
+            <label
+              for="number"
+              class="checkBox-label text-capitalize fs-5 my-1"
+            >
+              number</label
+            >
+            <br />
+            <input type="checkbox" id="symbol" name="symbol" value="symbol" />
+            <label
+              for="symbol"
+              class="checkBox-label text-capitalize fs-5 my-1"
+            >
+              symbol</label
+            >
+          </form>
+          <div
+            class="container d-flex flex-column flex-sm-row justify-content-center align-items-center"
+          >
+            <div class="password mx-2 d-flex align-items-center">
+              <span class="fw-bold text-dark ps-1 mx-2">password length</span>
+              <input
+                class="password__input-vol"
+                type="range"
+                min="6"
+                max="20"
+                step="1"
+                value="6"
+              />
+              <span
+                class="password__vol text-dark mx-2 px-2 fs-5 bg-light text-uppercase fw-bold"
+                >6</span
+              >
+            </div>
+          </div>
+          <button
+            class="generate-btn btn btn-primary fw-bold my-2 fs-5  py-1 "
+          >
+            generate password
+          </button>
         </div>
       </section>
     </main>

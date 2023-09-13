@@ -14,9 +14,22 @@ body {
 }
 
 .main-head {
-  width: fit-content;
-  background-color: #fff500;
+  /* width: fit-content; */
+  font-size: 40px;
 }
-.password-random {
-  width: 400px;
+.passwords {
+  background-color: #aaa51b;
+}
+@media (min-width: 667px) {
+  .passwords {
+    width: 50%;
+  }
+}
+@media (max-width: 667px) {
+  .password-random {
+    font-size: 0.6rem !important;
+  }
+}
+.passwords__generator {
+  max-width: 400px;
 }
